@@ -23,6 +23,9 @@ class Conversion:
     def __init__(self):
         self.swaggerTypes = {
             
+            'id': 'str',
+            
+            
             'target': 'str',
             
             
@@ -34,6 +37,10 @@ class Conversion:
         }
 
 
+        
+        #Identifier for the job conversion.
+        
+        self.id = None # str
         
         #Identifier for the job conversion type.
         

@@ -64,9 +64,6 @@ class JobsApi(object):
         if ('status' in params):
             queryParams['status'] = self.apiClient.toPathValue(params['status'])
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
         if ('page' in params):
             queryParams['page'] = self.apiClient.toPathValue(params['page'])
         
@@ -74,6 +71,9 @@ class JobsApi(object):
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
@@ -122,10 +122,10 @@ class JobsApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
@@ -175,13 +175,13 @@ class JobsApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
@@ -236,13 +236,13 @@ class JobsApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
@@ -298,13 +298,13 @@ class JobsApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
@@ -359,13 +359,13 @@ class JobsApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         

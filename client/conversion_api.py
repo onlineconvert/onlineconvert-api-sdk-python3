@@ -60,13 +60,13 @@ class ConversionApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
@@ -122,13 +122,13 @@ class ConversionApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
@@ -184,13 +184,13 @@ class ConversionApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
@@ -251,13 +251,13 @@ class ConversionApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         

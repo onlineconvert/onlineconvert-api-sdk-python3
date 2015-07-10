@@ -68,13 +68,13 @@ class OutputApi(object):
         if ('input_id' in params):
             queryParams['input_id'] = self.apiClient.toPathValue(params['input_id'])
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
@@ -130,13 +130,13 @@ class OutputApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
@@ -197,13 +197,13 @@ class OutputApi(object):
         headerParams = {}
 
         
-        if ('key' in params):
-            queryParams['key'] = self.apiClient.toPathValue(params['key'])
-        
 
         
         if ('token' in params):
             headerParams['token'] = params['token']
+        
+        if ('key' in params):
+            headerParams['key'] = params['key']
         
 
         
