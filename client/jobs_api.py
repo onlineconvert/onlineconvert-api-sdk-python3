@@ -36,15 +36,15 @@ class JobsApi(object):
 
         Args:
             status, str: Filter the status of the job. (required)
-            token, str: Token for authentication. (required)
-            key, str: Api key for the user to filter. (required)
+            x_oc_token, str: Token for authentication for the current job (required)
+            x_oc_api_key, str: Api key for the user to filter. (required)
             page, number: Pagination for list of elements. (required)
             
 
         Returns: list[Job]
         """
 
-        allParams = ['status', 'token', 'key', 'page']
+        allParams = ['status', 'x_oc_token', 'x_oc_api_key', 'page']
 
         params = locals()
         for (key, val) in params['kwargs'].items():
@@ -69,11 +69,11 @@ class JobsApi(object):
         
 
         
-        if ('token' in params):
-            headerParams['token'] = params['token']
+        if ('x_oc_token' in params):
+            headerParams['x_oc_token'] = params['x_oc_token']
         
-        if ('key' in params):
-            headerParams['key'] = params['key']
+        if ('x_oc_api_key' in params):
+            headerParams['x_oc_api_key'] = params['x_oc_api_key']
         
 
         
@@ -98,14 +98,14 @@ class JobsApi(object):
         
 
         Args:
-            key, str: Api key for the user to filter. (required)
+            x_oc_api_key, str: Api key for the user to filter. (required)
             body, Job: Content of the job. (required)
             
 
         Returns: Job
         """
 
-        allParams = ['key', 'body']
+        allParams = ['x_oc_api_key', 'body']
 
         params = locals()
         for (key, val) in params['kwargs'].items():
@@ -124,8 +124,8 @@ class JobsApi(object):
         
 
         
-        if ('key' in params):
-            headerParams['key'] = params['key']
+        if ('x_oc_api_key' in params):
+            headerParams['x_oc_api_key'] = params['x_oc_api_key']
         
 
         
@@ -150,15 +150,15 @@ class JobsApi(object):
         
 
         Args:
-            token, str: Token for authentication. (required)
-            key, str: Api key for the user to filter. (required)
+            x_oc_token, str: Token for authentication for the current job (required)
+            x_oc_api_key, str: Api key for the user to filter. (required)
             job_id, str: ID of job that needs to be fetched (required)
             
 
         Returns: Job
         """
 
-        allParams = ['token', 'key', 'job_id']
+        allParams = ['x_oc_token', 'x_oc_api_key', 'job_id']
 
         params = locals()
         for (key, val) in params['kwargs'].items():
@@ -177,11 +177,11 @@ class JobsApi(object):
         
 
         
-        if ('token' in params):
-            headerParams['token'] = params['token']
+        if ('x_oc_token' in params):
+            headerParams['x_oc_token'] = params['x_oc_token']
         
-        if ('key' in params):
-            headerParams['key'] = params['key']
+        if ('x_oc_api_key' in params):
+            headerParams['x_oc_api_key'] = params['x_oc_api_key']
         
 
         
@@ -211,15 +211,15 @@ class JobsApi(object):
         
 
         Args:
-            token, str: Token for authentication. (required)
-            key, str: Api key for the user to filter. (required)
+            x_oc_token, str: Token for authentication for the current job (required)
+            x_oc_api_key, str: Api key for the user to filter. (required)
             job_id, str: ID of job that needs to be fetched (required)
             
 
         Returns: Job
         """
 
-        allParams = ['token', 'key', 'job_id']
+        allParams = ['x_oc_token', 'x_oc_api_key', 'job_id']
 
         params = locals()
         for (key, val) in params['kwargs'].items():
@@ -238,11 +238,11 @@ class JobsApi(object):
         
 
         
-        if ('token' in params):
-            headerParams['token'] = params['token']
+        if ('x_oc_token' in params):
+            headerParams['x_oc_token'] = params['x_oc_token']
         
-        if ('key' in params):
-            headerParams['key'] = params['key']
+        if ('x_oc_api_key' in params):
+            headerParams['x_oc_api_key'] = params['x_oc_api_key']
         
 
         
@@ -273,15 +273,15 @@ class JobsApi(object):
 
         Args:
             body, Job: Content of the job. (required)
-            token, str: Token for authentication. (required)
-            key, str: Api key for the user to filter. (required)
+            x_oc_token, str: Token for authentication for the current job (required)
+            x_oc_api_key, str: Api key for the user to filter. (required)
             job_id, str: ID of job that needs to be fetched (required)
             
 
         Returns: Job
         """
 
-        allParams = ['body', 'token', 'key', 'job_id']
+        allParams = ['body', 'x_oc_token', 'x_oc_api_key', 'job_id']
 
         params = locals()
         for (key, val) in params['kwargs'].items():
@@ -300,11 +300,11 @@ class JobsApi(object):
         
 
         
-        if ('token' in params):
-            headerParams['token'] = params['token']
+        if ('x_oc_token' in params):
+            headerParams['x_oc_token'] = params['x_oc_token']
         
-        if ('key' in params):
-            headerParams['key'] = params['key']
+        if ('x_oc_api_key' in params):
+            headerParams['x_oc_api_key'] = params['x_oc_api_key']
         
 
         
@@ -334,15 +334,15 @@ class JobsApi(object):
         
 
         Args:
-            token, str: Token for authentication. (required)
-            key, str: Api key for the user to filter. (required)
+            x_oc_token, str: Token for authentication for the current job (required)
+            x_oc_api_key, str: Api key for the user to filter. (required)
             job_id, str: ID of job that needs to be fetched (required)
             
 
         Returns: list[Thread]
         """
 
-        allParams = ['token', 'key', 'job_id']
+        allParams = ['x_oc_token', 'x_oc_api_key', 'job_id']
 
         params = locals()
         for (key, val) in params['kwargs'].items():
@@ -361,11 +361,11 @@ class JobsApi(object):
         
 
         
-        if ('token' in params):
-            headerParams['token'] = params['token']
+        if ('x_oc_token' in params):
+            headerParams['x_oc_token'] = params['x_oc_token']
         
-        if ('key' in params):
-            headerParams['key'] = params['key']
+        if ('x_oc_api_key' in params):
+            headerParams['x_oc_api_key'] = params['x_oc_api_key']
         
 
         

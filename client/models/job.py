@@ -38,9 +38,6 @@ class Job:
             'process': 'bool',
             
             
-            'test': 'bool',
-            
-            
             'conversion': 'list[Conversion]',
             
             
@@ -81,10 +78,6 @@ class Job:
         #Determine if the job must be processed as soon as it is ready.
         
         self.process = None # bool
-        
-        #Determine if it is a test job.
-        
-        self.test = None # bool
         
         #Type of conversion or conversions to be carried out.
         

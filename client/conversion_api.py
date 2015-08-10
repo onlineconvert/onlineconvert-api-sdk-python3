@@ -35,15 +35,15 @@ class ConversionApi(object):
         
 
         Args:
-            token, str: Token for authentication. (required)
-            key, str: Api key for the user to filter. (required)
+            x_oc_token, str: Token for authentication for the current job (required)
+            x_oc_api_key, str: Api key for the user to filter. (required)
             job_id, str: ID of job that needs to be fetched (required)
             
 
         Returns: list[Conversion]
         """
 
-        allParams = ['token', 'key', 'job_id']
+        allParams = ['x_oc_token', 'x_oc_api_key', 'job_id']
 
         params = locals()
         for (key, val) in params['kwargs'].items():
@@ -62,11 +62,11 @@ class ConversionApi(object):
         
 
         
-        if ('token' in params):
-            headerParams['token'] = params['token']
+        if ('x_oc_token' in params):
+            headerParams['x_oc_token'] = params['x_oc_token']
         
-        if ('key' in params):
-            headerParams['key'] = params['key']
+        if ('x_oc_api_key' in params):
+            headerParams['x_oc_api_key'] = params['x_oc_api_key']
         
 
         
@@ -97,15 +97,15 @@ class ConversionApi(object):
 
         Args:
             body, Conversion: information for the conversion. (required)
-            token, str: Token for authentication. (required)
-            key, str: Api key for the user to filter. (required)
+            x_oc_token, str: Token for authentication for the current job (required)
+            x_oc_api_key, str: Api key for the user to filter. (required)
             job_id, str: ID of job that needs to be fetched (required)
             
 
         Returns: Conversion
         """
 
-        allParams = ['body', 'token', 'key', 'job_id']
+        allParams = ['body', 'x_oc_token', 'x_oc_api_key', 'job_id']
 
         params = locals()
         for (key, val) in params['kwargs'].items():
@@ -124,11 +124,11 @@ class ConversionApi(object):
         
 
         
-        if ('token' in params):
-            headerParams['token'] = params['token']
+        if ('x_oc_token' in params):
+            headerParams['x_oc_token'] = params['x_oc_token']
         
-        if ('key' in params):
-            headerParams['key'] = params['key']
+        if ('x_oc_api_key' in params):
+            headerParams['x_oc_api_key'] = params['x_oc_api_key']
         
 
         
@@ -158,8 +158,8 @@ class ConversionApi(object):
         
 
         Args:
-            token, str: Token for authentication. (required)
-            key, str: Api key for the user to filter. (required)
+            x_oc_token, str: Token for authentication for the current job (required)
+            x_oc_api_key, str: Api key for the user to filter. (required)
             job_id, str: ID of job that needs to be fetched (required)
             conversion_id, str: Identifier for the job conversion. (required)
             
@@ -167,7 +167,7 @@ class ConversionApi(object):
         Returns: Conversion
         """
 
-        allParams = ['token', 'key', 'job_id', 'conversion_id']
+        allParams = ['x_oc_token', 'x_oc_api_key', 'job_id', 'conversion_id']
 
         params = locals()
         for (key, val) in params['kwargs'].items():
@@ -186,11 +186,11 @@ class ConversionApi(object):
         
 
         
-        if ('token' in params):
-            headerParams['token'] = params['token']
+        if ('x_oc_token' in params):
+            headerParams['x_oc_token'] = params['x_oc_token']
         
-        if ('key' in params):
-            headerParams['key'] = params['key']
+        if ('x_oc_api_key' in params):
+            headerParams['x_oc_api_key'] = params['x_oc_api_key']
         
 
         
@@ -225,8 +225,8 @@ class ConversionApi(object):
         
 
         Args:
-            token, str: Token for authentication. (required)
-            key, str: Api key for the user to filter. (required)
+            x_oc_token, str: Token for authentication for the current job (required)
+            x_oc_api_key, str: Api key for the user to filter. (required)
             job_id, str: ID of job that needs to be fetched (required)
             conversion_id, str: Identifier for the job conversion. (required)
             
@@ -234,7 +234,7 @@ class ConversionApi(object):
         Returns: Conversion
         """
 
-        allParams = ['token', 'key', 'job_id', 'conversion_id']
+        allParams = ['x_oc_token', 'x_oc_api_key', 'job_id', 'conversion_id']
 
         params = locals()
         for (key, val) in params['kwargs'].items():
@@ -253,11 +253,11 @@ class ConversionApi(object):
         
 
         
-        if ('token' in params):
-            headerParams['token'] = params['token']
+        if ('x_oc_token' in params):
+            headerParams['x_oc_token'] = params['x_oc_token']
         
-        if ('key' in params):
-            headerParams['key'] = params['key']
+        if ('x_oc_api_key' in params):
+            headerParams['x_oc_api_key'] = params['x_oc_api_key']
         
 
         
